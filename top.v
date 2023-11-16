@@ -40,10 +40,6 @@ reg [2:0] jtag_in;
 reg [1:0] state;
 
 
-assign led = {tdo, tdi, tms, tck};
-  
- 
-
 assign data_valid = shift&sel;
 
 initial begin
@@ -100,7 +96,7 @@ bse2_inst (
 	 .io_jtag_tdo(tdo),
 	 .io_jtag_tck(tck),
 	 .io_gpioA_read(0),
-	 .io_gpioA_write(),
+	 .io_gpioA_write(led),
 	 .io_gpioA_writeEnable(),
 	 .io_uart_txd(uart_tx),
 	 .io_uart_rxd(uart_rx)
