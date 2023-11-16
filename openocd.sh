@@ -1,1 +1,1 @@
-./build/openocd/bin/openocd  -c 'set MURAX_CPU0_YAML ./cpu0.yaml' -f debug.cfg
+./build/bin/openocd  -c 'set MURAX_CPU0_YAML ./cpu0.yaml' -f debug.cfg
