@@ -1,1 +1,1 @@
-riscv64-linux-gnu-gdb muraxDemo.elf -ex 'target extended-remote :3333'
+build/bin/riscv32-unknown-elf-gdb muraxDemo.elf -ex 'target extended-remote :3333'
