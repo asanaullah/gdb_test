@@ -1,0 +1,1 @@
+riscv64-linux-gnu-gdb muraxDemo.elf -ex 'target extended-remote :3333'
